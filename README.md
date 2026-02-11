@@ -20,3 +20,14 @@ sc create SQLBrowser binPath= "C:\Program Files (x86)\Microsoft SQL Server\150\S
 
 net start SQLBrowser
 
+
+
+wmic /namespace:\\root\Microsoft\SqlServer path __namespace
+
+winmgmt /verifyrepository
+winmgmt /salvagerepository
+
+net start SQLBrowser
+
+
+
